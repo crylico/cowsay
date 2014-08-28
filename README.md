@@ -37,13 +37,13 @@ It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `c
      \
                                    .::!!!!!!!:.
   .!!!!!:.                        .:!!!!!!!!!!!!
-  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$ 
-      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P 
-      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$# 
-      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$* 
-      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R" 
-        "*$bd$$$$      '*$$$$$$$$$$$o+#" 
-             """"          """"""" 
+  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
+      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
+      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#
+      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
+      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
+        "*$bd$$$$      '*$$$$$$$$$$$o+#"
+             """"          """""""
 ````
 
 ## Usage as a module
@@ -53,9 +53,10 @@ cowsay can be used as any other npm dependency
     var cowsay = require("cowsay");
 
     console.log(cowsay.say({
+      face : "default",
     	text : "I'm a moooodule",
-    	e : "oO",
-    	T : "U "
+    	eyes : "oO",
+    	tongue : "U "
     }));
 
     // or cowsay.think()
